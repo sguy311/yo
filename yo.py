@@ -129,11 +129,23 @@ def main():
                             play_video(thumbnails[0][1])
                             running = False  # Exit the inner loop to restart the main loop     
                     elif event.key == pygame.K_2:
-                        play_video(thumbnails[1][1])
+                        index = event.key - pygame.K_2
+                        if index < len(selected_videos):
+                            play_video(thumbnails[1][1])
+                            running = False  # Exit the inner loop to restart the main loop
+                        #play_video(thumbnails[1][1])
                     elif event.key == pygame.K_3:
-                        play_video(thumbnails[2][1])
+                        index = event.key - pygame.K_3
+                        if index < len(selected_videos):
+                            play_video(thumbnails[2][1])
+                            running = False  # Exit the inner loop to restart the main loop
+                        #play_video(thumbnails[2][1])
                     elif event.key == pygame.K_4:
-                        play_video(thumbnails[3][1])
+                        index = event.key - pygame.K_4
+                        if index < len(selected_videos):
+                            play_video(thumbnails[0][1])
+                            running = False  # Exit the inner loop to restart the main loop
+                        #play_video(thumbnails[3][1])
 
         pygame.quit()
 
