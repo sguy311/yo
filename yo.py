@@ -88,7 +88,7 @@ def main():
     Main function to run the application.
     """
     while True:
-        playlist_url = 'https://youtube.com/playlist?list=PL_ym6QHjS1syjzqEx_yKHjQsuYccFZ1mU&si=BaqsVMl6M7KW7e3a'
+        playlist_url = 'https://youtube.com/playlist?list=PLqaalFyKa_zaysswZcTvEToSmwrxZz5Pd&si=zEOEOFkkhHpD3jH8'
         # Fetch video URLs from the playlist
         video_urls = fetch_video_urls(playlist_url)
         print(f"Video URLs: {video_urls}")
