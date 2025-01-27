@@ -69,7 +69,7 @@ def play_video(video_url):
     """
     try:
         # Download the video using yt-dlp
-        video_path = f"{os.path.expanduser('~')}/Downloads/video.mp4"
+        video_path = "video.mp4"
 
         # Delete the file if it already exists
         if os.path.exists(video_path):
